@@ -70,6 +70,24 @@ body{
     color: #f39c12; /* Change color on hover for interactivity */
   }
   
+
+/* ///SVG/// */
+.my-svg {
+  width: 200px; /* change width */
+  height: 200px; /* change height */
+  stroke-width: 10; /* change stroke width */
+}
+
+.svg-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+
+
+
+
   @media (max-width: 768px) {
     .footer-container {
       flex-direction: column; /* Stack the links and icons on smaller screens */
@@ -81,3 +99,4 @@ body{
     }
   }
   
+
