@@ -1,11 +1,11 @@
 import '../App.css'
-import ripples from '/ripples.svg';
+
 
 const Loading = () => {
   return (
     <>
     <div className="svg-container">
-         <img src={ripples} alt="My SVG" className="my-svg" />
+         <img src='/logo.webp' alt="My SVG" className="my-svg" />
     </div>
     </>
   )

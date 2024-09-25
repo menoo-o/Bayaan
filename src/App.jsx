@@ -1,27 +1,31 @@
-// App.js
-import "./App.css";
-import { Suspense, lazy } from 'react';
-import Loading from "./components/Loading";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
 
-const Header = lazy(() => new Promise(resolve => {
-  setTimeout(() => resolve(import('./components/Header')), 500);
-}));
+import Navbar from "./Components/Navbar";
+import Footer from './Components/Footer';
 
-const Footer = lazy(() => new Promise(resolve => {
-  setTimeout(() => resolve(import('./components/Footer')), 510);
-}));
+// pages
+import Home from "./pages/Home";
+import Shows from "./pages/Shows";
+import Merch from "./pages/Merch";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <>
-      <Suspense fallback={<Loading />}>
-        <Header />
-      </Suspense>
+    <Router>
+      <div className="app-container">
+        <Navbar />
+        
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/shows' element={<Shows />} />
+          <Route path='/merch' element={<Merch />} />
+          <Route path='/contact' element={<Contact />} />
+        </Routes>
 
-      <Suspense fallback={<Loading />}>
         <Footer />
-      </Suspense>
-    </>
+      </div>
+    </Router>
   );
 }
 

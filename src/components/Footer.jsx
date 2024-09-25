@@ -16,13 +16,13 @@ const Footer = () => {
 
   return (
     <>
-      <footer>
+
         <div className= "footer-container">
             <div className='links'>
                 <a href='#'>Home</a>
                 <a href='#'>Shows</a>
                 <a href='#'>Merch</a>
-                <a href='#'>Subscribe</a>
+                <a href='#'>Contact</a>
             </div>
 
 
@@ -35,7 +35,6 @@ const Footer = () => {
             <a href='#'><FontAwesomeIcon icon={faSoundcloud} /></a>
             </div>
         </div>
-      </footer>
     </>
   )
 }
