@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 *{
     padding: 0; margin: 0; box-sizing: border-box;
 }
 
 body{
-    font-family: "Poppins", sans-serif;
+    font-family: "Cinzel", sans-serif;
     position: relative;
 }
 
@@ -42,43 +41,60 @@ body{
     height: 50px;
     text-align: center;
     margin-top: auto !important;
+
   }
 
   .links{
-    /* From https://css.glass */
-     
+      display: block;
       position: absolute;
       z-index: 15;  
-      /* From https://css.glass */
       background: rgba(89, 89, 89, 0.65);
       width: 100%;
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-     
-     
   }
   
   .links a {
-    
-    color: black;
-    margin: 0 15px; /* Space between each link */
+    color: rgb(255, 255, 255);
+    margin: 0 10px; /* Space between each link */
     text-decoration: none; /* Remove underlines */
-    font-size: 1rem; /* Increase font size */
+    font-size: 1.15rem; /* Increase font size */
     letter-spacing: 0.1cap;
     text-transform: uppercase;
+    cursor: pointer;
   }
   
   .links a:hover {
     text-decoration: none; /* Underline on hover for accessibility */
     
   }
-  
-  .social-media a {
-    display: none;
-    color: #fff; /* White social media icons */
-    margin: 0 10px; /* Space between each icon */
-    font-size: 1.5em; /* Increase icon size */
-    text-decoration: none; /* Remove underlines */
+
+  .social-media{
+    position: absolute;
+    z-index: 20;
+    display: block;
+    bottom: 55px;
+    width: 100%;    
   }
+
+  .fb-insta-x a, .music-platforms a{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #fff;
+   
+    font-size: 1.7rem;
+    margin: 30px 15px;
+  }
+
+  .music-platforms a{
+    align-items: flex-end;
+  }
+  
+  
+
+
+  
 
   /* hero */
   .hero-container{
