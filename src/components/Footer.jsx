@@ -1,5 +1,5 @@
 import '../App.css'
-
+import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faFacebook,
@@ -36,8 +36,12 @@ const Footer = () => {
               </div>
 
             <div className='links'>
-                <a href='#'>Home</a>
-                <a href='#'>Shows</a>
+                <NavLink to='/'>
+                <a href=''>Home</a>
+                </NavLink>
+                <NavLink to='/shows'>
+                <a href=''>Shows</a>
+                </NavLink>
                 <a href='#'>Merch</a>
                 <a href='#'>Contact</a>
             </div>

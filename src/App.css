@@ -6,6 +6,7 @@
 body{
     font-family: "Cinzel", sans-serif;
     position: relative;
+
 }
 
 .app-container{
@@ -13,7 +14,7 @@ body{
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: #98969b;
+  background-color: #000000;
 }
 
 /* Navbar */
@@ -91,11 +92,6 @@ body{
     align-items: flex-end;
   }
   
-  
-
-
-  
-
   /* hero */
   .hero-container{
     position: absolute;
@@ -104,7 +100,6 @@ body{
     justify-content: center;
     align-items: center;
     margin: 0;
-
   }
 
   .hero-img{
@@ -112,10 +107,7 @@ body{
     object-fit: cover;
     width: 100%;
     height: 100vh;
-   
   }
-
-  
 
 /* ///loader/// */
 .my-svg {
@@ -143,6 +135,52 @@ body{
 }
 
 
+/* Shows */
+.show-block-parent{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 55vh;
+  flex-direction: column;
+  margin-top: 160px;
+}
+
+.show-block-parent h1{
+  font-size: 4rem;
+  color: #6d6c6c;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.show-block-container{
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.show-block-container p{
+  color: white;
+  text-align: center;
+  font-size: 1.05em;
+  margin: 10px 0;
+}
+
+.date-concert{
+  margin-top: 18px !important;
+}
+
+.show-block-container button{
+  width: 250px;
+  background-color: #ffffff;
+  padding: 5px 40px;
+  font: inherit;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  border: none;
+  font-size: 0.9em;
+  color: #616161;
+  letter-spacing: 0.06cap;
+}
 
 
   
