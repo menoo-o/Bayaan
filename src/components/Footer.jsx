@@ -22,16 +22,14 @@ const Footer = () => {
           <div className="social-media">
 
                 <div className='fb-insta-x'>
-                  <NavLink to='https://www.facebook.com/BayaanOfficial/'>
-                    <a href='#'><FontAwesomeIcon icon={faFacebook} /></a>  
-                  </NavLink>
-                 
-                  <a href='#'><FontAwesomeIcon icon={faInstagram} /></a>
+                  
+                  <a href='https://www.facebook.com/BayaanOfficial/'><FontAwesomeIcon icon={faFacebook} /></a>  
+                  <a href='https://www.instagram.com/bayaanofficial/'><FontAwesomeIcon icon={faInstagram} /></a>
                   <a href='#'><FontAwesomeIcon icon={faTwitter} /></a>
                 </div>
 
                 <div className='music-platforms'>
-                  <a href='#'><FontAwesomeIcon icon={faYoutube} /></a>
+                  <a href='https://www.youtube.com/channel/UCqOLlRNuWqswf30c9AJC-Cg'><FontAwesomeIcon icon={faYoutube} /></a>
                   <a href='#'><FontAwesomeIcon icon={faSpotify} /></a>
                   <a href='#'><FontAwesomeIcon icon={faSoundcloud} /></a>
                 </div>
